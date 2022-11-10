@@ -12,6 +12,7 @@ jobs:
     needs: packages
     runs-on: ubuntu-latest
     steps:
+      - run: cd ci-demo
       - run: yarn lint
 
   publish:
