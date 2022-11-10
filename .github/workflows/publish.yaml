@@ -2,14 +2,14 @@ name: Lint and Publish
 on: push
 jobs:
   packages:
-    name: Install
+    name: packages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: npm install
   lint:
     name: lint
-    needs: Install
+    needs: packages
     runs-on: ubuntu-latest
     steps:
       - run: yarn lint
