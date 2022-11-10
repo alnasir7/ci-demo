@@ -19,6 +19,6 @@ jobs:
     needs: lint
     steps:
       - uses: JS-DevTools/npm-publish@v1
-          with:
-            registry: https://npm.pkg.github.com
-            token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          registry: https://npm.pkg.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}
